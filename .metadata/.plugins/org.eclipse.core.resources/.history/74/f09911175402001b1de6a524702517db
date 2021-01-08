@@ -1,0 +1,10 @@
+package Orm;
+
+public class Test_JDBCDAO {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

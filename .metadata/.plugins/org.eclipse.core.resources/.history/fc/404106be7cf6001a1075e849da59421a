@@ -1,0 +1,30 @@
+package Test;
+
+import java.util.Scanner;
+
+
+
+public class Cube_Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Cube cb =  new Cube();
+		Scanner scanner = new Scanner(System.in);
+		double a = scanner.nextDouble();
+		try {
+			method(a);
+		} catch (Cube_Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public static double method(double len) throws Cube_Exception {
+		double result;
+		if (len <= 0) {
+			throw new Cube_Exception("正立方體邊長不得為0或是負數");
+		}
+		result = len * len *len;
+		return result;
+	}
+}

@@ -1,0 +1,42 @@
+package HomeWork8;
+
+import java.io.ObjectInputStream.GetField;
+import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+
+
+public class HomeWork8_01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		Iterator it =  list.iterator();
+		while (it.hasNext()) {
+			Object obj =(Object)it.next();
+			System.out.println(obj);
+		}
+		
+
+		
+	}
+	public  static getlist() {
+		ArrayList list = new ArrayList();
+		list.add(100);
+		list.add(3.14);
+		list.add(12L);
+		list.add(((short) 100));
+		list.add(5.1);
+		list.add("Kitty");
+		list.add(100);
+		list.add(new Object());
+		list.add("Snoopy");
+		list.add(new BigInteger("1000"));
+		return list;
+	}
+
+}

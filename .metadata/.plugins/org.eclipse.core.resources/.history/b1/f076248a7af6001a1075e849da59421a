@@ -1,0 +1,21 @@
+package Test;
+
+public class Cube  {
+	double length = 12;
+	
+	public Cube() {
+		// TODO Auto-generated constructor stub
+	}
+	public double getLength() {
+		return length;
+	}
+	public void setLength(double length) {
+		this.length = length;
+	}
+	public void CubeException(double length)throws ArithmeticException {
+		if (length <= 0) {
+			 throw new ArithmeticException ("正立方體邊長不得為0或是負數");
+		}
+	
+	}
+}

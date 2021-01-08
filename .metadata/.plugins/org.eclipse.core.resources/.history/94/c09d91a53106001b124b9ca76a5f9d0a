@@ -1,0 +1,11 @@
+package HomeWork8;
+
+public class Train_main {
+
+	public static void main(String[] args) {
+		Train_Test train = new Train_Test();
+		train.foreachh(null);
+
+	}
+
+}

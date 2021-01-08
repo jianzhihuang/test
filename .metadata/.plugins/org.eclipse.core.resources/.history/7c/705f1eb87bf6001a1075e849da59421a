@@ -1,0 +1,14 @@
+package Test;
+
+public class Cube_Exception extends Exception {
+	Cube cb =  new Cube();
+	public Cube_Exception() {
+	}
+	
+	public Cube_Exception(String message) throws Cube_Exception {
+		
+		if (cb.getLength()<= 0) {
+			 throw new Cube_Exception  ("正立方體邊長不得為0或是負數");
+		}
+	}
+}

@@ -1,0 +1,52 @@
+package HomeWork9;
+
+public class HomeWork9_01 implements Runnable {
+	private int count = 1;
+
+	public HomeWork9_01() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void run() {
+		while (count <= 5) {
+
+			System.out.println("饅頭人吃第" + count + "碗");
+
+			try {
+
+				Thread.sleep((int)(Math.random()*2501 + 500));
+				if (count >= 5) {
+					System.out.println("饅頭人吃完了");
+				}
+				count++;
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+		HomeWork9_01 r1 = new HomeWork9_01();
+		Thread tr1 = new Thread(r1);
+		HomeWork9_01_1 r2 = new HomeWork9_01_1();
+		Thread tr2 = new Thread(r2);
+		boolean start = true;
+		System.out.println("-----大胃王比賽開始-----");
+		try {
+			
+			
+			for (int i = 0; i < 2; i++) {
+				tr1.join();
+				tr2.join();
+			}
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		System.out.println("-----大胃王比賽結束-----");
+	}
+
+}

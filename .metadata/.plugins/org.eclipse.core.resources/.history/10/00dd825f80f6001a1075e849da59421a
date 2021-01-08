@@ -1,0 +1,22 @@
+package Test;
+
+
+
+public class Cube {
+	double length = 12;
+	 
+	public Cube() {
+		// TODO Auto-generated constructor stub
+	}
+	public Cube(double length) {
+		// TODO Auto-generated constructor stub
+		this.length = length;
+	}
+	public double getLength() {
+		return length;
+	}
+	public void setLength(double length) {
+		this.length = length;
+	}
+
+}

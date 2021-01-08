@@ -1,0 +1,50 @@
+package Orm;
+
+import java.util.List;
+
+public class DeptDAOimpl implements DeptDAO {
+	
+	private static final String SQL = "INSERT INTO DEPARTMENT (DEPTNO, DNAME, LOC) VALUES (?, ?, ?)";
+
+	
+	static {
+		try {
+			Class.forName(Mydata.DRIVER);
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+
+	@Override
+	public void add(Dept dept) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void update(Dept dept) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void del(int deptno) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Dept findBydeptno(int deptno) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Dept> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

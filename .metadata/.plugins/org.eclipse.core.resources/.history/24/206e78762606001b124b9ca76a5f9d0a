@@ -1,0 +1,34 @@
+package HomeWork8;
+
+import java.math.BigInteger;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+
+
+public class HomeWork8_01 {
+
+	public static void main(String[] args, Object Object) {
+		// TODO Auto-generated method stub
+		HashSet set = new HashSet();
+		set.add(100);
+		set.add(3.14);
+		set.add(12L);
+		set.add(((short) 100));
+		set.add(5.1);
+		set.add("Kitty");
+		set.add(100);
+		set.add(Object);
+		set.add("Snoopy");
+		set.add(new BigInteger("1000"));
+		
+		Iterator it =  set.iterator();
+		while (it.hasNext()) {
+			System.out.println(it.toString());
+		}
+		
+		
+	}
+
+}

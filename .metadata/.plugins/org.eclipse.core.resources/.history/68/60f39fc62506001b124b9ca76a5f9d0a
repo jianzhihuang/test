@@ -1,0 +1,24 @@
+package HomeWork8;
+
+import java.math.BigInteger;
+import java.util.HashSet;
+import java.util.Set;
+
+
+
+public class HomeWork8_01 {
+
+     	HashSet set = new HashSet();
+		set.add(100);
+		set.add(3.14);
+		set.add(12L);
+		set.add(((short) 100));
+		set.add(5.1);
+		set.add("Kitty");
+		set.add(100);
+		set.add(Object);
+		set.add("Snoopy");
+		set.add(new BigInteger("1000"));
+	}
+
+

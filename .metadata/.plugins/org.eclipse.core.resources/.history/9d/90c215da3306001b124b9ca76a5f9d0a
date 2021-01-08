@@ -1,0 +1,13 @@
+package HomeWork8;
+
+import java.util.ArrayList;
+
+public class Train_main {
+
+	public static void main(String[] args) {
+		Train_Test train = new Train_Test();
+		ArrayList<Train> tArrayList  = train.getTrain();
+		Train_Test.Iter(tArrayList);
+
+}
+}
